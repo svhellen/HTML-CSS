@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de textos</title>
+</head>
+<body>
+    <h1>Principais formatações</h1>
+    <h2>Negrito / Destaque</h2>
+    <p>Nesta frase temos um <b>termo em destaque</b> usando a tag &lt;b&gt; (não semântica, apenas visual).</p>
+    <p>Nesta frase temos um <strong>termo em destaque</strong> usando a tag &lt;strong&gt; (semântica, pois há significado, dizemos que a frase é de alguma importância)</p>
+    <h2>Itálico / Ênfase</h2>
+    <p>Nesta frase temos um <i>termo em ênfase</i> usando a tag &lt;i&gt; (não semântica)</p>
+    <p>Nesta frase temos um <em>termo em ênfase</em> usando a tag &lt;em&gt; (semântica).</p>
+    <h2>Texto marcado</h2>   
+    <p>Podemos crias também um <mark>texto marcado</mark> usando a tag &lt;mark&gt;</p>
+    <h2>Texto grande e pequeno</h2>
+    <p>Estamos criando um <big>texto grande</big> e um <small>texto pequeno</small>, usando as tags &lt;big&gt; (obsoleto, pois só da forma) e &ltsmall&gt; (o prof acha que não está obsoleto pq existe as "letras pequenas de contratos e coisas assim, enão teria algum significado)</p>
+    <h2>Texto deletado</h2>
+    <p>Podemos marcar o texto como <del>um texto excluído</del> para indicar que el deve ser lido, mas não considerado.</p>
+    <h2>Texto inserido</h2>
+    <p>Podemos marcar o texto como <ins>um texto inserido</ins> para dar ênfase e indicar que ele foi incluído depois. (Existe também a tag &lt;u&gt; para sublinhar, mas ela é uma tag sem significado.)</p>
+    <h2>Texto sobrescrito</h2>
+    <p>Para inseris coisas do tipo x<sup>20</sup>  usando a tag &lt;sup&gt;</p>
+    <h2>Texto subscrito</h2>
+    <p>Para inserir coisas tipo H<sub>2</sub>O usando a tag &lt;sub&gt;</p>
+    <h1>Outras formatações</h1>
+    <h2>Código-fonte / Pré-formatação</h2>
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem javascript.</p>
+    <pre>
+        <code>
+    num = int(input('Digite um número: '))
+    if num % 2 == 0:
+        print(f'O número {num} é PAR.')
+    else:
+        print(f'O número {num} é ÌMPAR.')
+        </code>
+    </pre>
+    <h2>Citações simples</h2>
+    <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido.</q></p>
+    <h2>Citações completas</h2>
+    <blockquote cite="Keyes, D. (2018). Flores Para Algernon. Brasil: Editora Aleph.">
+        De qualquer forma é por iço que vou tenta continua ficando intelijente pra eu poder ter aquela sensassão boua de novo. É bom sabe coisas e se intelijente e eu quiria sabe tudo que esiste nu mundo intero. Eu quiria pode ser intelijenti de novo agora mês mo. Se eu pudesse eu ia missentar e le o tempo inteiro. <br>  <br>
+        "Keyes, D. (2018). Flores Para Algernon. Brasil: Editora Aleph."
+    </blockquote>
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando.</p>
+    <h2>Texto invertido</h2>
+    <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML.</bdo></p>
+
+</body>
+</html>

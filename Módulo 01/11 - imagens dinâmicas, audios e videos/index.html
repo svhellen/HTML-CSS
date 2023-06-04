@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinâmicas, áudios e vídeos</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas, áudios e vídeos</h1>
+    <h2>Imagem dinâmica</h2>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png">
+        <img src="imagens/foto-g.png" alt="Imagem flexivel">
+    </picture>
+
+    <h2>Reproduzindo áudio</h2>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <audio preload="metadata" controls>
+        <source src="midia/happy-mistake.mp3" type="audio/mpeg">
+        <source src="midia/happy-mistake.ogg" type="audio/ogg">
+        <source src="midia/happy-mistake.wav" type="audio/wav">
+        <p>Infelizmente o seu navegador não consegue reproduzir o áudio. <a href="midia/happy-mistake.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+    <!-- <audio src="midia/guanacast-33.mp3" controls autoplay ></audio>
+    MP3 WAV OGG SEMPRE EVITE ARQUIVOS WAV PQ SAO MT GRANDES-->
+    <h2>Inserindo vídeos localmente</h2>
+    <p>Esse vídeo esta hospedado no meu próprio site.</p>
+    <video width="500" poster="imagens/foto-g.png" controls>
+        <source src="midia/meu-video-full.mp4" type="video/mp4">
+        <source src="midia/meu-video.mp4" type="video/mp4">
+        <source src="midia/meu-video.webm" type="video/webm">
+        <source src="midia/meu-video.ogv" type="video/ogg">
+        <p>Seu navegador não tem compatibilidade com a reprodução de vídeos.</p>
+    </video>
+    <h2>Inserindo vídeos do youtube</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/OzUnqQk4eOg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>    </iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/S-UAi_VA9Ck" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <h2>Inserindo vídeo do vimeo</h2>
+        <iframe src="https://player.vimeo.com/video/415543451?h=8bfb80a52a" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        <p><a href="https://vimeo.com/415543451">Animation reel 2020</a> from <a href="https://vimeo.com/animatorger">Ger</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+</body>
+</html>

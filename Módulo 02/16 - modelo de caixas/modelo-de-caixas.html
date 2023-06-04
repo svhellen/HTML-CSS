@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif
+        }
+
+        div {
+            display: block;
+            font-size: large;
+            text-align: justify;
+            height: 500px;
+            width: 300px;
+        }
+        
+
+        div#box-level {
+            border-width: 5px;
+            border-style: double;
+            border-color: black;
+
+            outline-style: double;
+
+            padding-top: 50px;
+            padding-right: 50px;
+            padding-bottom: 50px;
+            padding-left: 50px;
+
+            margin-top: 50px;
+            margin-right: auto;
+            margin-bottom: 50px;
+            margin-left: auto;
+        }
+
+        div#inline-level {
+            border: 5px double black;
+
+            outline-style: double;
+
+            padding: 50px;
+
+            margin: 50px auto;
+        }
+        
+        div:hover {
+            background-color: rgba(240, 128, 128, 0.618);
+            color: white;
+            outline: black;
+        }
+
+        h6 {
+            text-align: center;
+            width: 300px;
+            height: 50px;
+            background-color: lightgray;
+            border: 10px solid red;
+            padding: 20px;
+            outline: 30px solid blue;
+            margin: 50px auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Modelo de caixas</h1>
+    <h2>O que é uma caixa?</h2>
+    <p>
+        Segundo o conceito "box model" a grande maioria dos elementos HTML são como caixas. Elas são containers que armazenam conteúdos ou até mesmo outras caixas.
+    </p>
+    <h2>Anatomia de uma caixa</h2>
+    <p>
+        Principais elementos da anatomia de uma caixa <br>
+     <img src="modelo-de-caixas.png" alt="">
+    <pre>
+        content = conteúdo
+        height = altura
+        width  = largura
+        padding = preenchimento, borda de dentro
+        border = borda
+        outline = contorno
+        margin = margem, borda de fora
+
+
+    </pre>
+        
+    </p>
+    <h2>Tipos de caixa</h2>
+    <div id="box-level">
+        <h3>Box-level</h3>
+        <h4>Características</h4>
+        <li>Sempre inicia numa linha nova</li>
+        <li>Sempre ocupa a largura total da tela</li>
+        <li>Novos elementos começam na próxima linha</li>
+        <h3>Exemplos de box-level</h3>
+        <li>&lt;div&gt;</li>
+        <li>&lt;h1&gt; - &lt;h6&gt;</li>
+        <li>&lt;p&gt;</li>
+        <li>&lt;main&gt;</li>
+        <li>&lt;header&gt;</li>
+        <li>&lt;nav&gt;</li>
+        <li>&lt;article&gt;</li>
+        <li>&lt;aside&gt;</li>
+        <li>&lt;footer&gt;</li>
+        <li>&lt;form&gt;</li>
+        <li>&lt;video&gt;</li>
+    </div>
+    <div id="inline-level">
+        <h3>Inline-level</h3>
+        <h4>Características</h4>
+        <li>Continua na mesma linha</li>
+        <li>Ocupa só o necessário </li>
+        <li>Não pula pra próxima linha</li>
+        <h3>Exemplos de inline-level</h3>
+        <li>&lt;span&gt;</li>
+        <li>&lt;a&gt;</li>
+        <li>&lt;code&gt;</li>
+        <li>&lt;small&gt;</li>
+        <li>&lt;strong&gt;</li>
+        <li>&lt;em&gt;</li>
+        <li>&lt;sup&gt; - &lt;sub&gt;</li>
+        <li>&lt;label&gt;</li>
+        <li>&lt;button&gt;</li>
+        <li>&lt;input&gt;</li>
+        <li>&lt;select&gt;</li>
+    </div>
+    <h2>Modelo de caixas na prática</h2>
+    <h6>Exemplo de Caixa</h6>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de inline-level</a>. Vamos ver como tudo isso funciona?</p>
+</body>
+</html>

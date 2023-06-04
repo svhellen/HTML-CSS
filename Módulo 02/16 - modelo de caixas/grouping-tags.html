@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        h1 {
+
+        }
+
+        nav {
+            background-color: rgb(84, 83, 83);
+            padding: 3px;
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.442);
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+
+        }
+
+        article {
+            background-color: lightgray;
+            padding: 10px;
+            border-radius: 5px 50px;
+            box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.37);
+        }
+
+        article > aside {
+            background-color: rgb(181, 181, 181);
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+   <header>
+    <h1>Meu site</h1>
+    <nav>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </nav>
+   </header> 
+   <main>
+        <section id="assuntos">
+            <p>Esportes Política Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h1>Noticias sobre o Brasil</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, blanditiis adipisci! Autem in tempore, quos deserunt, aspernatur maxime repudiandae quibusdam doloribus explicabo voluptatibus dolores quaerat dignissimos? Mollitia nihil quasi culpa.</p>
+                <aside>
+                    <p>Artigo escrito por José Silva</p>
+                </aside>
+            </article>
+        </section>
+        <section id="groupingTags">
+            <h1>Grouping Tags e Semantic Tags</h1>
+            <img src="grouping-tags.png" alt="">
+            <h2>Header</h2>
+            <p>Cria áreas relativas a cabeçalhos. Pode ser o abeçalho principal de um site ou até mesmo cabeçalho de uma seção ou artigo. Normalmente inclue títulos &lt;h1&gt; - &lt;h6&gt; e subtítulos.Podem também conter menus de navegação.</p>
+            <h2>Nav</h2>
+            <p>Define uma área que possui os links de navegação pela
+                estrutura de páginas que vão compor o website. Um
+                &lt;nav&gt; pode estar dentro de um &lt;header&gt;.</p>
+            <h2>Main</h2>
+            <p>É um agrupador usado para delimitar o conteúdo
+                principal do nosso site. Normalmente concentra as
+                seções, artigos e conteúdos periféricos. </p>
+            <h2>Section</h2>
+            <p>Cria seções para sua página. Ela pode conter o conteúdo diretamente no seu corpo ou
+                dividir os conteúdos em artigos com conteúdos específicos. Segundo a documentação
+                oficial da W3C, “uma seção é um agrupamento temático de conteúdos, tipicamente
+                com um cabeçalho”</p>
+            <h2>Article</h2>
+            <p>Um artigo é um elemento que vai conter um conteúdo que pode ser lido de forma
+                independente e dizem respeito a um mesmo assunto. Podemos usar um &lt;article&gt;
+                para delimitar um post de blog ou fórum, uma notícia, etc.</p>
+                <h2>Aside</h2>
+                <p>Delimita um conteúdo periférico e complementar ao conteúdo principal de um artigo
+                    ou seção. Normalmente um conteúdo &lt;aside&gt; está posicionado ao lado de um
+                    determinado texto ou até mesmo no meio dele, exatamente como fizemos no bloco de
+                    texto apresentado anteriormente, falando sobre “MÚLTIPLOS NÍVEIS”</p>
+                    <p>MÚLTIPLOS NÍVEIS: A sua criatividade e planejamento vai definir
+                        a estrutura do seu site. Sendo assim, é possível ter um ou mais
+                        &lt;article&gt; dentro de uma &lt;section&gt; ou até mesmo criar &lt;section&gt;
+                        dentro de um &lt;article&gt;. Não existem limitações quanto a isso.</p>
+            <h2>Footer</h2>
+            <p>Cria um rodapé para o site inteiro, seção ou artigo. É um conteúdo que não faz parte
+                diretamente do conteúdo nem é um conteúdo periférico (o que caracterizaria um
+                &lt;aside&gt;), mas possui informações sobre autoria do conteúdo, links adicionais, mapa
+                do site, documentos relacionados.
+                A seguir, vou criar uma proposta de estrutura para um projeto de site. Não tome ela
+                como a única possibilidade de criar o posicionamento de elementos de agrupamento
+                semântico.</p>
+            
+        </section>
+   </main>
+   <footer>
+    <p>Desenvolvido pelo CursoemVideo</p>
+   </footer>
+</body>
+</html>
