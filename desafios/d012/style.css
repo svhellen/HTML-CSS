@@ -1,9 +1,11 @@
 @charset "UTF-8"
 
-@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700&family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
 :root {
-    --font-destaque: 'Passion One', sans-serif;
+    --font-destaque: 'Passion One', cursive;
     --font-padrao: 'Sriracha', cursive;
 }
 
@@ -13,11 +15,12 @@
 }
 
 html, body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     min-height: 100vh;
-    background-color: darkgray;
+    background-color: white;
 }
 
-body a {
+a {
     color: white;
     font-weight: bold;
     text-decoration: none;
@@ -33,58 +36,53 @@ header {
     color: white;
     text-align: center;
     font-size: large;
-    min-height: 150px;
-    padding: 10px;
+    padding: 30px;
 }
 
 header > h1 {
-    font-family: var(--font-destaque);
-    font-size: 3em;
+    font-size: 8vw;
     font-variant: small-caps;
     font-weight: bold;
-    padding-top: 50px;
     padding: 20px;
-}
-
-section {
-    background-color: white;
-    font-family: var(--font-padrao);
-    background-color: transparent;
-    padding: 20px;
-}
-
-section#fundo01 {
-    color: white;
-    /*color > image > position > repeat > [size]* > attachment*/
-    background: black url('imagens/background001.jpg') center right no-repeat fixed;
-    background-size: cover;
-    padding: 70px 20px;
-}
-
-section#fundo02 {
-    color: white;
-    background: black url('imagens/background002.jpg') center no-repeat fixed;
-    background-size: cover;
-    padding: 70px 20px;
 }
 
 main p {
-    background-color: ;
-    font-size: 1.5em;
-    font-weight: bold;
-    font-style: italic;
     line-height: 2em;
     padding: 20px 5px;
 }
 
 main p.img-fundo {
     background-color: rgba(0, 0, 0, 0.327);
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.575);
     min-height: fit-content;
     max-width: fit-content;
 }
 
+section {
+    background-color: darkgray;
+    font-family: var(--font-padrao);
+    font-size: 3.5vw;
+    background-color: transparent;
+    padding: 30px 20px;
+}
+
+section.imagem {
+        color: white;    
+        padding: 70px 20px; 
+        /*color > image > position > repeat > [size]* > attachment*/
+        background: black center right no-repeat fixed; 
+        background-size: cover;      
+}
+
+section#fundo01 {
+    background-image:  url('imagens/background001.jpg');
+}
+
+section#fundo02 {
+    background: url('imagens/background002.jpg');
+}
+
 footer {
-    font-family: Arial, Helvetica, sans-serif;
     color: white;
     background-color: black;
     text-align: center;
