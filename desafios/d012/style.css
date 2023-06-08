@@ -5,8 +5,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
 :root {
+    --font-padrao:  Verdana, Geneva, Tahoma, sans-serif;
     --font-destaque: 'Passion One', cursive;
-    --font-padrao: 'Sriracha', cursive;
+    --font-p: 'Sriracha', cursive;
 }
 
 * {
@@ -15,7 +16,7 @@
 }
 
 html, body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: var(--font-padrao)
     min-height: 100vh;
     background-color: white;
 }
@@ -59,27 +60,31 @@ main p.img-fundo {
 }
 
 section {
-    background-color: darkgray;
-    font-family: var(--font-padrao);
+
+    font-family: var(--font-p);
     font-size: 3.5vw;
-    background-color: transparent;
     padding: 30px 20px;
 }
 
 section.imagem {
+        background-color: rgb(51, 51, 51);
         color: white;    
         padding: 70px 20px; 
         /*color > image > position > repeat > [size]* > attachment*/
-        background: black center right no-repeat fixed; 
-        background-size: cover;      
+        background: right center no-repeat; 
+
 }
 
 section#fundo01 {
     background-image:  url('imagens/background001.jpg');
+    background-size: cover; 
+    background-attachment: fixed;
 }
 
 section#fundo02 {
     background: url('imagens/background002.jpg');
+    background-size: cover; 
+    background-attachment: fixed;
 }
 
 footer {
