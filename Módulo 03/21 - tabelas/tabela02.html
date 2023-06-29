@@ -10,12 +10,46 @@
         }
 
         table {
+            position: relative;
             width: 500px;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            background-color: lightgray;
+            padding: 10px;
+        }
+
+        /* fixar cabeçalho*/
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(75, 75, 75);
+        }
+
+        thead, tfoot {
+            color: white;
+            background-color: rgb(75, 75, 75);
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
         }
 
         td, th {
             border: 1px solid black;
             padding: 10px;
+        }
+
+        .estado {
+            text-align: left;
+        }
+
+        .populacao {
+            text-align: right;
         }
     </style>
 </head>
@@ -24,28 +58,82 @@
     <!--
         Anatomia de tabelas grandes
         table
+          capition
         - thead: cabeçalho da tabela
             tr, td, th
         - tbody: corpo da tabela
             tr, td, th
         - tfoot: rodapé da tabela
             tr, td, th
-    -->
-    <thead>
-        <tr>
-            <th>Estado</th>
-            <th>População</th>
-            
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>São Paulo</td>
-            <td>44 420 459</td>
-        </tr>
-    </tbody>
-    <tfoot>
-
-    </tfoot>
+    --> 
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col" style="width: 20px;">Posição</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="posicao">1</td>
+                <td class="estado">São Paulo</td>
+                <td class="populacao">44 420 459</td>
+            </tr>
+            <tr>
+                <td class="posicao">2</td>
+                <td class="estado">Minas Gerais</td>
+                <td class="populacao">20 538 718</td>
+            </tr>
+            <tr>
+                <td class="posicao">3</td>
+                <td class="estado">Rio de Janeiro</td>
+                <td class="populacao">16 054 524</td>
+            </tr>
+            <tr>
+                <td class="posicao">4</td>
+                <td class="estado">Bahia</td>
+                <td class="populacao">14 136 417</td>
+            </tr>
+            <tr>
+                <td class="posicao">5</td>
+                <td class="estado">Paraná</td>
+                <td class="populacao">11 443 208</td>
+            </tr>
+            <tr>
+                <td class="posicao">6</td>
+                <td class="estado">Rio Grande do Sul</td>
+                <td class="populacao">10 880 506</td>
+            </tr>
+            <tr>
+                <td class="posicao">7</td>
+                <td class="estado">Pernambuco</td>
+                <td class="populacao">9 058 155</td>
+            </tr>
+            <tr>
+                <td class="posicao">8</td>
+                <td class="estado">Ceará</td>
+                <td class="populacao">8 791 688</td>
+            </tr>
+            <tr>
+                <td class="posicao">9</td>
+                <td class="estado">Pará</td>
+                <td class="populacao">8 116 132</td>
+            </tr>
+            <tr>
+                <td class="posicao">10</td>
+                <td class="estado">Santa Catarina</td>
+                <td class="populacao">7 609 601</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td></td>
+                <th scope="row">Total de habitantes</th>
+                <td></td>
+            </tr>
+        </tfoot>
+    </table>
 </body>
 </html>
